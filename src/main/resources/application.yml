@@ -1,0 +1,28 @@
+server:
+  servlet:
+    context-path: /BackOffice
+  port: 8084
+
+static:
+  assets:
+    location: src/main/webapp/
+spring:
+  servlet:
+    multipart:
+      max-request-size: 50MB
+      max-file-size: 50MB
+  messages:
+    basename : i18n/messages
+
+  main:
+    banner-mode: off
+  thymeleaf:
+    prefix: /
+    
+#web:
+#  cors:
+#    allowed-origins: "http://localhost:4200"
+#    allowed-methods: GET, POST, PUT, DELETE, OPTIONS
+#    max-age: 3600
+#    allowed-headers: "Requestor-Type"
+#    exposed-headers: "X-Get-Header"
